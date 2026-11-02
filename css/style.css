@@ -1,4 +1,4 @@
-::root{
+:root {
 
     --purple-color: #7c2dd6;
     --black-10: #121214;
@@ -9,29 +9,68 @@
     --white-60: #FFFF;
 
     --title: "Inter", sans-serif;
-    --text:"Space Grotesk", sans-serif;
+    --text: "Space Grotesk", sans-serif;
 
 }
 
-*{
+* {
     margin: 0%;
     padding: 0%;
 }
 
 
+
 /* Cabeçalho */
 
+header {
+    background-color: var(--black-20);
+    height: 250px;
+    width: auto;
+}
+
+.header-title-input {
+
+    padding: 50px;
+    text-align: center;
+}
+
+.title-header {
+    font-family: var(--text);
+    font-size: 40px;
+    font-weight: 400;
+    color: var(--white-60);
+    margin-bottom: 40px;
+}
+
+.menu-input {}
 
 
 
+.input-blog-header:hover {
+    border: 2px var(--purple-color) solid;
+    transition: 0.5s ease;
+}
 
 
+.input-blog-header {
+
+    font-size: 16px;
+    width: 900px;
+    height: 40px;
+    font-family: var(--text);
+    font-weight: 400;
+    padding-left: 10px;
+    background-color: var(--black-40);
+    color: var(--gray-50);
+    border: 2px var(--black-40) solid;
+    border-radius: 40px;
+    transition: 0.5s ease;
+}
 
 
-
-
-
-
+.title-header-one {
+    color: var(--purple-color);
+}
 
 
 
@@ -40,9 +79,50 @@
 /* Corpo */
 
 
+body {
+    background-color: var(--black-10);
+}
 
 
+.blog-contents{
+    color: var(--white-60);
+}
 
+.blog-type-content{
+
+    background-color: var(--black-20);
+    border: 2px var(--black-40) solid;
+    transition: 0.5s ease;
+    margin-bottom: 50px;
+}
+
+.blog-type-content:hover {
+
+    border: 1px var(--purple-color) solid;
+    transition: 0.5s ease;
+
+}
+
+.blog-type-content time {
+    color: var(--purple-color);
+    font-family: var(--text);
+    font-weight: 100;
+}
+
+.blog-type-content h2 {
+    color: var(--white-60);
+    font-family: var(--title);
+    font-weight: 300;
+}
+
+
+.blog-type-content p {
+
+    color: var(--gray-50);
+    font-family: var(--text);
+    font-weight: 200;
+
+}
 
 
 
