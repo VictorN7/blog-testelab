@@ -1,3 +1,4 @@
+/* Variáveis de cores e fontes usadas em todo o site. */
 :root {
 
     --purple-color: #7c2dd6;
@@ -13,6 +14,7 @@
 
 }
 
+/* Remove margens e preenchimentos padrão do navegador em todos os elementos HTML. */
 * {
     margin: 0%;
     padding: 0%;
@@ -20,42 +22,49 @@
 
 
 
-/* Cabeçalho */
 
+
+/* -------------- HEADER -------------- */
+
+
+/* Fundo e dimensões do cabeçalho: <header class="container-header">. */
 header {
     background-color: var(--black-20);
     height: 250px;
     width: auto;
 }
 
+/* Espaçamento e alinhamento do conteúdo interno do cabeçalho: <div class="header-title-input">. */
 .header-title-input {
 
     padding: 50px;
     text-align: center;
 }
 
+/* Estilo do título principal do site: <h1 class="title-header">. */
 .title-header {
     font-family: var(--text);
-    font-size: 40px;
-    font-weight: 400;
+    font-size: 50px;
+    font-weight: 500;
     color: var(--white-60);
     margin-bottom: 40px;
 }
 
+/* Contêiner da área de busca: <div class="menu-input">. */
 .menu-input {}
 
 
-
+/* Efeito ao passar o mouse sobre o campo de busca: <input class="input-blog-header">. */
 .input-blog-header:hover {
     border: 2px var(--purple-color) solid;
     transition: 0.5s ease;
 }
 
 
+/* Aparência do campo de busca: <input class="input-blog-header">. */
 .input-blog-header {
-
     font-size: 16px;
-    width: 900px;
+    width: 70%;
     height: 40px;
     font-family: var(--text);
     font-weight: 400;
@@ -68,6 +77,7 @@ header {
 }
 
 
+/* Cor roxa da palavra "Teste": <span class="title-header-one"> dentro do título. */
 .title-header-one {
     color: var(--purple-color);
 }
@@ -75,27 +85,35 @@ header {
 
 
 
+/* -------------- BODY -------------- */
 
-/* Corpo */
 
-
+/* Cor de fundo geral da página: elemento <body>. */
 body {
     background-color: var(--black-10);
 }
-
-
+/* Cor padrão do texto da lista de artigos: <section class="blog-contents">. */
 .blog-contents{
     color: var(--white-60);
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* Fundo, borda e espaçamento inferior de cada artigo: <article class="blog-type-content">. */
 .blog-type-content{
-
+    width: 70%;
+    height: 120px;
     background-color: var(--black-20);
     border: 2px var(--black-40) solid;
     transition: 0.5s ease;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
+    padding: 10px 10px;
+    border-radius: 10px;
 }
 
+/* Efeito de borda ao passar o mouse sobre cada artigo. */
 .blog-type-content:hover {
 
     border: 1px var(--purple-color) solid;
@@ -103,12 +121,14 @@ body {
 
 }
 
+/* Cor e fonte da data de publicação: <time> dentro de cada artigo. */
 .blog-type-content time {
     color: var(--purple-color);
     font-family: var(--text);
     font-weight: 100;
 }
 
+/* Aparência do título de cada artigo: <h2> dentro de <article class="blog-type-content">. */
 .blog-type-content h2 {
     color: var(--white-60);
     font-family: var(--title);
@@ -116,6 +136,7 @@ body {
 }
 
 
+/* Aparência do resumo de cada artigo: <p> dentro de <article class="blog-type-content">. */
 .blog-type-content p {
 
     color: var(--gray-50);
@@ -135,6 +156,4 @@ body {
 
 
 
-
-
-/* Rodapé */
+/* -------------- FOOTER -------------- */
