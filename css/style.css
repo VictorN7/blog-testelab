@@ -56,6 +56,7 @@ header {
 
 /* Efeito ao passar o mouse sobre o campo de busca: <input class="input-blog-header">. */
 .input-blog-header:hover {
+
     border: 2px var(--purple-color) solid;
     transition: 0.5s ease;
 }
@@ -111,13 +112,15 @@ body {
     margin-bottom: 25px;
     padding: 10px 10px;
     border-radius: 10px;
+    position: relative;
 }
 
 /* Efeito de borda ao passar o mouse sobre cada artigo. */
 .blog-type-content:hover {
 
-    border: 1px var(--purple-color) solid;
+    border: 2px var(--purple-color) solid;
     transition: 0.5s ease;
+    transform: scale(1); /* Mantém o tamanho original (100%) */
 
 }
 
@@ -135,6 +138,10 @@ body {
     font-weight: 300;
 }
 
+.blog-type-title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 /* Aparência do resumo de cada artigo: <p> dentro de <article class="blog-type-content">. */
 .blog-type-content p {
@@ -145,6 +152,36 @@ body {
 
 }
 
+/* Icone de coração */
+
+.favorite-btn {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+.heart-icon {
+    width: 24px;
+    height: 24px;
+    fill: transparent;
+    stroke: var(--purple-color);
+    stroke-width: 1.7;
+    transition: all 0.2s ease;
+}
+
+/* Coração favoritado */
+.favorite-btn.active .heart-icon {
+    fill: var(--purple-color);
+}
+
+/* Efeito ao passar o mouse */
+.favorite-btn:hover .heart-icon {
+    transform: scale(1.1);
+}
 
 
 
@@ -154,6 +191,11 @@ body {
 
 
 
+/* -------------- Media Querie -------------- */
 
 
-/* -------------- FOOTER -------------- */
+
+@media screen  {
+    
+}
+
